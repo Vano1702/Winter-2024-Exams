@@ -1,13 +1,13 @@
 # Return an array without duplicates
 
 def distinct(data):
-    A = []
-    w = 0
+    uniques = []
+    index = 0
 
-    for a in data:
-        if a in A:
-            data[w] = None
+    for element in data:
+        if element in uniques:
+            data[index] = None
         else:
-            A.append(a)
-        w += 1
+            uniques.append(element)
+        index += 1
     return list(filter(lambda x: isinstance(x, (int, float)), data))
