@@ -1,9 +1,9 @@
 # Get day number
 
-D = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
-def _parse_day(s):
-    for i in range(len(D)):
-        if s.startswith(D[i].lower()):
+def parse_day(day_string):
+    for i in range(len(DAYS)):
+        if day_string.startswith(DAYS[i].lower()):
             return i + 1
     return -1

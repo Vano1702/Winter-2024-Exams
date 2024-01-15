@@ -1,5 +1,5 @@
 import unittest
-from day import _parse_day
+from day import parse_day
 
 
 class TestSum(unittest.TestCase):
@@ -14,7 +14,7 @@ class TestSum(unittest.TestCase):
 
         for input_value, expected_output in test_cases:
             with self.subTest(input_value=input_value):
-                result = _parse_day(input_value)
+                result = parse_day(input_value)
                 self.assertEqual(result, expected_output)
 
 
