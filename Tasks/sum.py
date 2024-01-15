@@ -1,10 +1,10 @@
 # Sum all numbers from an array
 
-def k(s=lambda: None):
+def numbers_sum(input_arr):
     sum_array = [0]
     k = 5
 
-    for i in s:
+    for i in input_arr:
         t = type(i).__name__
         if t == 'int':
             if len(sum_array) > 0:

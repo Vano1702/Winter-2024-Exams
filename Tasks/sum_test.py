@@ -1,9 +1,9 @@
 import unittest
-from sum import k
+from sum import numbers_sum
 
 
 class TestSum(unittest.TestCase):
-    def test_k(self):
+    def test_numbers_sum(self):
         test_cases = [
             [[5, True, 'string', 7, 'hello'], 12],
             [[5, True, 'string', -7, 'hello'], -2],
@@ -16,7 +16,7 @@ class TestSum(unittest.TestCase):
 
         for input_value, expected_output in test_cases:
             with self.subTest(input_value=input_value):
-                result = k(input_value)
+                result = numbers_sum(input_value)
                 self.assertEqual(result, expected_output)
 
 
