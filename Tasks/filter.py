@@ -1,14 +1,14 @@
 # Filter array by type name
 
-def Filter(T, t):
+def filter(input_arr, type_string):
     remove = []
 
-    for C in T:
-        x = T.index(C)
-        if type(T[x]).__name__ != t:
-            remove.insert(0, x)
+    for element in input_arr:
+        el_index = input_arr.index(element)
+        if type(input_arr[el_index]).__name__ != type_string:
+            remove.insert(0, el_index)
 
-    for x in remove:
-        T.pop(x)
+    for element in remove:
+        input_arr.pop(element)
 
-    return T
+    return input_arr

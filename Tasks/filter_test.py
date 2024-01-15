@@ -1,5 +1,5 @@
 import unittest
-from filter import Filter
+from filter import filter
 
 
 class TestSum(unittest.TestCase):
@@ -14,7 +14,7 @@ class TestSum(unittest.TestCase):
 
         for input_value, expected_output in test_cases:
             with self.subTest(input_value=input_value):
-                result = Filter(input_value[0], input_value[1])
+                result = filter(input_value[0], input_value[1])
                 self.assertEqual(result, expected_output)
 
 
