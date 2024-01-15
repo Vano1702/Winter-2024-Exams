@@ -5,14 +5,10 @@ def words(input_str):
     flag = False
 
     for char in input_str:
-        if not flag:
-            if char == ' ':
-                flag = False
-            else:
-                flag = True
-                words_count += 1
-        else:
-            if char == ' ':
-                flag = False
+        if char == ' ':
+            flag = False
+        elif not flag:
+            flag = True
+            words_count += 1
 
     return words_count
