@@ -1,12 +1,12 @@
 # Merge two dictionaries
 
-def merge_two_objects(object_1, object_2):
-    object_3 = {}
+def merge_two_objects(dict_1, dict_2):
+    dict_3 = {}
 
-    for attribute_name in object_1:
-        object_3[attribute_name] = object_1[attribute_name]
+    for key in dict_1:
+        dict_3[key] = dict_1[key]
 
-    for attribute_name in object_2:
-        object_3[attribute_name] = object_2[attribute_name]
+    for key in dict_2:
+        dict_3[key] = dict_2[key]
 
-    return object_3
+    return dict_3
