@@ -3,7 +3,7 @@
 DAYS = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']
 
 def parse_day(day_string):
-    for i in range(len(DAYS)):
-        if day_string.startswith(DAYS[i]):
-            return i + 1
+    for i, day in enumerate(DAYS, start=1):
+        if day_string.startswith(day):
+            return i
     return -1
