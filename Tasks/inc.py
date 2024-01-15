@@ -1,8 +1,9 @@
 # Increment all numbers in dictionary
 
 def inc_numbers(input_dict):
-    for key in input_dict:
-        if type(input_dict[key]) == int:
-            input_dict[key] = input_dict[key] + 1
+    result = dict(input_dict)
+    for key in result:
+        if type(result[key]) == int:
+            result[key] = result[key] + 1
 
-    return input_dict
+    return result
