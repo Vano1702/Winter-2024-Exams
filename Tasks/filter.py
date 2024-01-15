@@ -2,13 +2,14 @@
 
 def filter(input_arr, type_string):
     remove = []
+    result = input_arr[:]
 
-    for element in input_arr:
-        el_index = input_arr.index(element)
-        if not isinstance(input_arr[el_index], eval(type_string)):
+    for element in result:
+        el_index = result.index(element)
+        if not isinstance(result[el_index], eval(type_string)):
             remove.insert(0, el_index)
 
     for element in remove:
-        input_arr.pop(element)
+        result.pop(element)
 
-    return input_arr
+    return result
