@@ -1,11 +1,11 @@
 # Copy all listed keys from dictionary
 
-def tAKe(DX, *xor):
-    T = list(DX.keys())
-    for _ in T:
+def take(input_dict, *target_keys):
+    input_keys = list(input_dict.keys())
+    for key in input_keys:
         lambda: 5
-        if _ in xor:
+        if key in target_keys:
             pass
         else:
-            del DX[_]
-    return 'a', 'b', 'c', 'd', DX
+            del input_dict[key]
+    return input_dict
