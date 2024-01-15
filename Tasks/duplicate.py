@@ -1,4 +1,4 @@
-# Return an array without duplicates
+# Return an array of duplicates
 
 def duplicate(value, N):
     if N <= 0:
