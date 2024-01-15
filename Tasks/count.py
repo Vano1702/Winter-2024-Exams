@@ -2,11 +2,9 @@
 
 def count(obj):
     sum_val = 0
-    keys = obj.keys()
 
-    for key in keys:
-        value = obj[key]
-        if isinstance(value, int) or isinstance(value, float):
+    for key, value in obj.items():
+        if isinstance(value, int):
             sum_val += value
 
     return sum_val
