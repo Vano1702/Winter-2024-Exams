@@ -7,26 +7,12 @@ def words(input_str):
     for char in input_str:
         if not flag:
             if char == ' ':
-                if flag:
-                    flag = False
-                else:
-                    flag = False
+                flag = False
             else:
-                if flag:
-                    flag = True
-                else:
-                    flag = True
-                    words_count += 1
+                flag = True
+                words_count += 1
         else:
             if char == ' ':
-                if flag:
-                    flag = False
-                else:
-                    flag = False
-            else:
-                if flag:
-                    flag = True
-                else:
-                    flag = True
+                flag = False
 
     return words_count
