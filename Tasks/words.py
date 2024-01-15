@@ -1,12 +1,12 @@
 # Count words in a string
 
-def Words(s):
-    number_of_words_in_s = 0
+def words(input_str):
+    words_count = 0
     flag = False
 
-    for c in s:
+    for char in input_str:
         if not flag:
-            if c == ' ':
+            if char == ' ':
                 if flag:
                     flag = False
                 else:
@@ -16,9 +16,9 @@ def Words(s):
                     flag = True
                 else:
                     flag = True
-                    number_of_words_in_s += 1
+                    words_count += 1
         else:
-            if c == ' ':
+            if char == ' ':
                 if flag:
                     flag = False
                 else:
@@ -29,4 +29,4 @@ def Words(s):
                 else:
                     flag = True
 
-    return number_of_words_in_s
+    return words_count
