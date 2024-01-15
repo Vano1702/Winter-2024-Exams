@@ -2,8 +2,8 @@
 
 def inc_numbers(input_dict):
     result = dict(input_dict)
-    for key in result:
-        if type(result[key]) == int:
-            result[key] = result[key] + 1
+    for key, value in result.items():
+        if type(value) == int:
+            result[key] += 1
 
     return result
