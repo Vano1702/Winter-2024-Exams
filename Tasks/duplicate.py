@@ -4,7 +4,5 @@ def duplicate(value, count):
     if count <= 0:
         return []
     else:
-        result = []
-        for i in range(count):
-            result.append(value)
+        result = [value for i in range(count)]
         return result
